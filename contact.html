@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact portfolio</title>
+    <link rel="stylesheet" href="destyle.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=LINE+Seed+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div><a href="index.html#PROFILE">PROFILE</a></div>
+        <div><a href="index.html#WORKS">WORKS</a></div>
+        <div><a href="index.html#CONTACT">CONTACT</a></div>
+    </header>
+    <main class="for">
+        <h5>お問い合わせ</h5>
+    <form action="contact.php" method="POST">
+        <label for="name">お名前:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">お問い合わせ内容:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">送&emsp;信</button>
+    </form>
+    <p class="aki">&emsp;</p>
+    </main>
+    <!-- スマホでもホバーさせる一行 -->
+    <script>document.addEventListener('touchstart', function(){}, {passive: true});</script>
+</body>
+</html>
