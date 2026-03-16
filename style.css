@@ -325,11 +325,11 @@ img:hover {
 }
 
 ::view-transition-new(root) {
-  animation: reveal-circle 2s ease-in-out;
+  animation: reveal-circle 1s ease-in-out;
 }
 
 ::view-transition-old(root) {
   animation: none;
-  opacity: 2;
+  opacity: 1;
 }
 /* デフォルトのopacity: 0が動いてしまうので上書き */
