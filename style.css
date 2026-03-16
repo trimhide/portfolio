@@ -307,3 +307,29 @@ img:hover {
 .character:hover {
   transform: rotate(720deg); /* ホバー時に360度回転 */
 }
+
+
+
+
+@view-transition {
+  navigation: auto;
+}
+
+@keyframes reveal-circle {
+  from {
+    clip-path: circle(0% at 50% 50%);
+  }
+  to {
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+
+::view-transition-new(root) {
+  animation: reveal-circle 2s ease-in-out;
+}
+
+::view-transition-old(root) {
+  animation: none;
+  opacity: 2;
+}
+/* デフォルトのopacity: 0が動いてしまうので上書き */
