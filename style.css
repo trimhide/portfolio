@@ -314,7 +314,6 @@ img:hover {
 @view-transition {
   navigation: auto;
 }
-
 @keyframes reveal-circle {
   from {
     clip-path: circle(0% at 50% 50%);
@@ -332,4 +331,3 @@ img:hover {
   animation: none;
   opacity: 1;
 }
-/* デフォルトのopacity: 0が動いてしまうので上書き */
